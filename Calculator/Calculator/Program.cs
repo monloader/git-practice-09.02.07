@@ -13,13 +13,16 @@ namespace Calculator
             Console.Write("Введите первое число: ");
             double a = Convert.ToDouble(Console.ReadLine());
 
+
             Console.Write("Выберите операцию (+): ");
+            Console.Write("Выберите операцию (+, *): ");
             string op = Console.ReadLine();
 
             Console.Write("Введите второе число: ");
             double b = Convert.ToDouble(Console.ReadLine());
 
             if (op == "+") Console.WriteLine("Результат: " + (a + b));
+            if (op == "*") Console.WriteLine("Результат: " + (a * b));
             else Console.WriteLine("Неверная операция!");
         }
     }
