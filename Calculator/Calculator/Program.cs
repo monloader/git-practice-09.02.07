@@ -25,7 +25,7 @@ namespace Calculator
             else if (op == "*") Console.WriteLine("Результат: " + (a * b));
             else if (op == "/")
             {
-                if (b == 0) Console.WriteLine("Деление на ноль невозможно");
+                if (b == 0) Console.WriteLine("Error: Division by zero");
                 else Console.WriteLine("Результат: " + (a / b));
             }
             else Console.WriteLine("Неверная операция!");
